@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='playground.css')}}">
+    <title>Playground</title>
+</head>
+<body>
+    <h1>~ WELCOME TRAVELERS! ~</h1>
+    {% for x in range(0,times): %}
+    <div class="box" style="background-color: {{color}};">
+        <img class="anya" src="{{url_for('static',filename='anya-anya-forger.gif')}}">
+    </div>
+    {% endfor %}
+</body>
+</html>
